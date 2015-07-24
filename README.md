@@ -8,4 +8,4 @@ This script will open up an alert on APK Mirror download pages. If you say ok, i
 Clears cookies on the coloradoan.com website so that you can view unlimited articles a month.  Could be adapted for any website of your choosing.
 
 **TfsSliderHeight**
-In TFS 2013 by default the query results take up half the screen and work item details take up the other half. This script moves the slider so that work item details take up more space if a query has less than 10 results. Make sure to adjust for your TFS server url.
+In TFS 2013 by default the query results take up half the screen and work item details take up the other half. This script moves the slider so that work item details take up more space if a query has less than 14 results. Make sure to adjust for your TFS server url.

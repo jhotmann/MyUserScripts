@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       TFS Slider Height Fixer
 // @namespace  *
-// @version    1.2.0
+// @version    1.2.1
 // @description  Automatically adjust query results pane heights in TFS 2013 web interface
 // @include http*://tfs2012:8080/tfs/*_workitems*
 // @copyright  2015, Jordan Hotmann
@@ -19,7 +19,7 @@ function moveSlider() {
   console.log(workItemCount + ' work items');
   var rightPaneHeight = parseInt(document.getElementById('60').offsetHeight);
 
-  if (workItemCount < 10) {
+  if (workItemCount < 14) {
     var workItemsHeight = parseInt(document.getElementsByClassName('grid-gutter')[0].offsetHeight);
     console.log(workItemsHeight);
     var finalHeight = rightPaneHeight - workItemsHeight - 116;
@@ -30,18 +30,5 @@ function moveSlider() {
     document.getElementsByClassName('leftPane')[1].style.bottom = finalHeight + 'px';
     document.getElementsByClassName('rightPane')[1].style.height = finalHeight + 'px';
     document.getElementsByClassName('handleBar')[1].style.bottom = finalHeight + 'px';
-  } else {
-    var halfHeight = rightPaneHeight / 2;
-    document.getElementsByClassName('leftPane')[1].style.bottom = halfHeight + 'px';
-    document.getElementsByClassName('rightPane')[1].style.height = halfHeight + 'px';
-    document.getElementsByClassName('handleBar')[1].style.bottom = halfHeight + 'px';
-
-    var refreshButton = document.getElementsByClassName('icon-refresh')[0];
-    var clickEvent = new MouseEvent('click', {
-      'view': window,
-      'bubbles': true,
-      'cancelable': false
-    });
-    refreshButton.dispatchEvent(clickEvent);
   }
 }
