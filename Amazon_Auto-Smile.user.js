@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name       Amazon Auto-Smile
-// @version    0.3
+// @version    0.4
 // @description  Automatically redirects all www.amazon.com URLs to their smile.amazon.com equivalent.
 // @match      http://www.amazon.com/*
 // @match      https://www.amazon.com/*
 // @run-at     document-start
 // @copyright  2013
-// @updateURL https://raw.githubusercontent.com/jhotmann/MyUserScripts/master/Amazon_Auto-Smile.user.js
-// @downloadURL https://raw.githubusercontent.com/jhotmann/MyUserScripts/master/Amazon_Auto-Smile.user.js
+// @updateURL https://github.com/jhotmann/MyUserScripts/raw/master/Amazon_Auto-Smile.user.js
+// @downloadURL https://github.com/jhotmann/MyUserScripts/raw/master/Amazon_Auto-Smile.user.js
 // @grant      none
 // ==/UserScript==
 
